@@ -1,0 +1,113 @@
+.main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main>a{
+    width: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.main>a>div{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.fractal:hover .text{
+    background-color: #fff;
+    color: #6275EA;
+}
+
+.color-model:hover .text{
+    background-color: #fff;
+    color: #B581EC;
+}
+
+.triangle:hover .text{
+    background-color: #fff;
+    color: #FDA281;
+}
+
+.triangle:hover img{
+    opacity: 1;
+}
+
+.color-model:hover img{
+    opacity: 1;
+}
+
+.fractal:hover img{
+    opacity: 1;
+}
+
+.fractal{
+    background: linear-gradient(45deg, rgba(98,96,235,1), rgba(99,162,233,1));
+    overflow: hidden;
+}
+
+.color-model{
+    background: linear-gradient(45deg, #C291EF, #9B60E5);
+    overflow: hidden;
+}
+
+.triangle{
+    background: linear-gradient(45deg, #FE8492, #FDB079);
+    overflow: hidden;
+}
+
+.main>a>div img{
+    opacity: 0;
+    transition: all 0.3s;
+    width: 500px;
+    height: 500px;
+}
+
+.triangle img{
+    transform: translateX(25%) translateY(-20%) scale(1.5);
+}
+
+.color-model img{
+    transform: translateY(-20%) scale(1.5);
+}
+
+.fractal img{
+    transform: translateX(-25%) translateY(-20%) scale(1.5);
+}
+
+.text{
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #fff;
+    border: 5px solid #fff;
+    border-radius: 500px;
+    text-align: center;
+    width: 176px;
+    height: 55px;
+    line-height: 45px;
+    transition: all 0.3s;
+}
+
+.help-button{
+    width: 48px !important;
+    height: 48px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    background-color: #43D69D;
+    color: #fff;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 1000;
+    right: 24px;
+    bottom: 24px;
+}

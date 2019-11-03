@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+}
+.properties{
+    min-height: 100vh;
+    background-color: #43D69D;
+    width: 462px;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: width 0.5s linear;
+    z-index: 2;
+    position: relative;
+}
+
+.settings-invoker i{
+    transition: transform 0.3s;
+}
+
+.settings-invoker{
+    position: absolute;
+    top: 50%;
+    padding-right: 10px;
+    width: 60px;
+    height: 104px;
+    text-align: right;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: #43d69d;
+    color: #fff;
+    border: none;
+    min-height: 104px;
+    max-width: 60px;
+    border-radius: 5000px;
+    transition: left 0.5s linear;
+}
+
+.settings-invoker:focus{
+    outline: 0;
+}
+
+.closed{
+    width: 0;
+}
+
+.closed>div{
+    visibility: hidden;
+}
+
+.checker{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    opacity: 0;
+    top: 0;
+    left: 0;    
+}
+
+.checker:checked + i{
+    transform: rotate(180deg);
+}
+
+.properties select{
+    width: 350px;
+    height: 46px;
+    background-color: #28946A;
+    border: 1px solid #c4c4c4;
+    border-radius: 100px;
+    padding: 0px 25px;
+    color: #c4c4c4;
+    font-size: 24px;
+}
+
+.properties select:focus {
+    outline: 0;
+}
+
+.properties select::-ms-expand {	display: none; }
+
+.properties select{
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.properties select option{
+    padding-top: 100px;
+    border-radius: 100px;
+}
+
+li{
+    list-style-type: none;
+}
+
+.dd-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+    height: 46px;
+    background-color: #28946A;
+    border: 1px solid #c4c4c4;
+    border-radius: 100px;
+    padding: 0px 25px;
+    color: #c4c4c4;
+    font-size: 24px;
+    cursor: default;
+}
+
+.dd-list{
+    width: 350px;
+    background-color: #28946A;
+    border: 1px solid #c4c4c4;
+    border-top: 0;
+    border-bottom-left-radius: 23px;
+    border-bottom-right-radius: 23px;
+    /* padding: 0px 25px; */
+    padding-top: 23px;
+    margin-top: -23px;
+    color: #c4c4c4;
+    font-size: 24px;
+    cursor: default;
+}
+
+.dd-list li{
+    border-top: 1px solid #c4c4c4;
+    transition: color 0.3s;
+    padding: 5px 25px;
+}
+
+.dd-list li:hover{
+    color: #fff;
+}
