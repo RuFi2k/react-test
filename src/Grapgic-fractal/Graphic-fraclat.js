@@ -52,7 +52,6 @@ class Graphics extends React.Component {
       anglesCount: 3,
       coef: 1/2
     }
-
     
 
     render(){
