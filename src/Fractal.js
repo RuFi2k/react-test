@@ -11,11 +11,12 @@ class Fractal extends React.Component{
     this.handler = this.handler.bind(this);
   }
 
-  handler(l, c, cf){
+  handler(l, c, param, type){
     this.setState({
       len: l,
       anglesCount: c,
-      coef: cf
+      param: param,
+      fType: type
     });
   }
 
@@ -25,6 +26,9 @@ class Fractal extends React.Component{
       <div className="main-screen">
       <Settings handler = {this.handler}/>
       <Graphic newState = {this.state}/>
+      <a className="help-button" href="/help" style={{textDecoration: 'none'}}>
+          ?
+      </a>
       </div>
     </>
   }

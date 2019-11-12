@@ -4,12 +4,11 @@
 .properties{
     min-height: 100vh;
     background-color: #43D69D;
-    width: 462px;
+    width: 24%;
     padding-top: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: width 0.5s linear;
     z-index: 2;
     position: relative;
 }
@@ -32,7 +31,7 @@
     min-height: 104px;
     max-width: 60px;
     border-radius: 5000px;
-    transition: left 0.5s linear;
+    left: 100%;
 }
 
 .settings-invoker:focus{
@@ -76,6 +75,10 @@
     outline: 0;
 }
 
+.properties.closed{
+    width: 0;
+}
+
 .properties select::-ms-expand {	display: none; }
 
 .properties select{
@@ -114,7 +117,6 @@ li{
     border-top: 0;
     border-bottom-left-radius: 23px;
     border-bottom-right-radius: 23px;
-    /* padding: 0px 25px; */
     padding-top: 23px;
     margin-top: -23px;
     color: #c4c4c4;
@@ -130,4 +132,204 @@ li{
 
 .dd-list li:hover{
     color: #fff;
+}
+
+.kochFractalInput{
+    width: 150px;
+    background-color: #28946A;
+    border: 1px solid #c4c4c4;
+    padding: 11.5px 25px;
+    border-top: 0;
+    margin: 0px 25px;
+    border-radius: 23px;
+    color: #fff;
+}
+
+.serpinskiiFractalInput{
+    width: 350px;
+    background-color: #28946A;
+    border: 1px solid #c4c4c4;
+    padding-top: 23px;
+    padding: 11.5px 25px;
+    border-top: 0;
+    border-radius: 23px;
+    color: #fff;
+}
+
+.serpinskiiFractalInput:focus{
+    outline: none;
+}
+
+.textBox{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.buildBtn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #fff;
+    border-radius: 50px;
+    padding: 10px 25px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.buildBtn:focus{
+    outline: none;
+}
+
+@media screen and (max-width: 1650px){
+    .properties{
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 1350px){
+    .properties{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    .properties{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .properties{
+        width: 50%;
+    }
+
+    .dd-header, .dd-list{
+        width: 300px;
+    }
+
+    .dd-header.huge{
+        width: 300px;
+    }
+
+    .properties div{
+        width: 300px;
+    }
+
+    .kochFractalInput{
+        margin: 12.5px;
+        width: 125px;
+    }
+
+    .serpinskiiFractalInput{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .properties{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .properties{
+        width: 75%;
+        padding-top: 100px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .properties div{
+        width: 250px;
+    }
+
+    .kochFractalInput{
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 100px;
+    }
+
+    .serpinskiiFractalInput{
+        width: 250px;
+    }
+
+    .dd-header, .dd-list{
+        width: 250px;
+    }
+
+    .dd-header.huge{
+        width: 250px;
+    }
+
+    .properties *{
+        font-size: 18px !important;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .properties>div{
+        margin-right: 25px;
+    }
+
+    .properties{
+        width: 80%;
+    }
+
+    .properties div{
+        width: 215px;
+    }
+
+    .kochFractalInput{
+        margin: 3.75px;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 100px;
+        height: 30px;
+    }
+
+    .serpinskiiFractalInput{
+        width: 215px;
+        height: 30px;
+    }
+
+    .buildBtn{
+        margin-top: 10px;
+        font-size: 12px !important;
+    }
+
+    .dd-header, .dd-list{
+        width: 215px;
+    }
+
+    .dd-header.huge{
+        width: 215px;
+    }
+
+    .line-formula input{
+        height: 20px !important;
+        width: 40px !important;
+        line-height: 20px !important;
+        font-size: 12px !important;
+    }
+
+    .dd-header, .dd-list-item{
+        height: 30px;
+    }
+
+    .dd-list{
+        margin-top: -15px;
+        padding-top: 15px;
+    }
+
+    .help-button{
+        bottom: 10px;
+        right: 10px;
+        width: 36px !important;
+        height: 36px;
+        font-size: 24px;
+        line-height: 36px;
+    }
 }

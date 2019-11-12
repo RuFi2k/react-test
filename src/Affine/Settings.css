@@ -1,0 +1,59 @@
+.dd-header::placeholder{
+    color: #c4c4c4;
+    font-size: 18px;
+}
+
+input.dd-header{
+    width: 100px;
+    text-align: center;
+}
+
+input.huge{
+    width: 250px;
+    margin-bottom: 25px;
+}
+
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+       -moz-appearance: textfield;
+            appearance: textfield;
+  }
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+  }
+
+.point{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.point input{
+    margin-top: 25px;
+}
+
+.line-formula{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    color: #ffffff;
+    font-weight: bold;
+    width: 250px;
+}
+
+.line-formula input{
+    padding: 0px 5px;
+    width: 50px;
+    height: 35px;
+    border-radius: 15px;
+    font-size: 12px;
+    line-height: 35px;
+}
+
+.line-formula input::placeholder{
+    color: #c4c4c4;
+    font-size: 12px;
+}

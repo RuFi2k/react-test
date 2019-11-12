@@ -106,8 +106,37 @@
     background-color: #43D69D;
     color: #fff;
     border-radius: 50px;
-    position: absolute;
+    position: fixed;
     z-index: 1000;
     right: 24px;
     bottom: 24px;
+}
+
+@media screen and (max-width: 1500px){
+    .main>a>div img{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .main{
+        flex-direction: column;
+    }
+
+    .main>a>div{
+        padding: 25px;
+    }
+
+    .triangle img{
+        transform: translateX(50%) translateY(-20%) scale(1.5);
+    }
+    
+    .color-model img{
+        transform: translateY(-20%) scale(1.5);
+    }
+    
+    .fractal img{
+        transform: translateX(-50%) translateY(-20%) scale(1.5);
+    }
 }

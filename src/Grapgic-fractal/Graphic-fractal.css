@@ -1,3 +1,18 @@
-.jxgbox *{
-    z-index: 0 !important;
+.jxgbox{
+    position: absolute;
+    padding-top: 72px;
+    width: 100vw !important;
+    height: 100vw !important;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 1024px){
+    .jxgbox{
+        padding-top: 72px;
+        width: 105vh !important;
+        height: 105vh !important;
+    }
 }
